@@ -13,7 +13,5 @@ namespace dmacaspac201.Contracts
         Task AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(Guid id);
-        Task SoftDeleteAsync(Guid? id);
-        Task UndeleteAsync(Guid? id);
     }
 }

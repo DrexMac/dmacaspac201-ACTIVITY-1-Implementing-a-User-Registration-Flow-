@@ -16,7 +16,6 @@ namespace dmacaspac201.Models
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public bool IsDeleted { get; set; }
-
         public User? User { get; set; }
     }
 }
