@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dmacaspac201.Contracts
+namespace dmacaspac201.Data.Models
 {
-    public interface IProductService : IService
+    public enum UserRole
     {
+        Admin = 1,
+        Seller = 2,
+        Buyer = 3
     }
 }

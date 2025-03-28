@@ -5,10 +5,6 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201", "dmacaspac201.csproj", "{3AE047B9-EE6D-4818-9A49-48A4A510EC95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.WebApi", "..\dmacaspac201.WebApi\dmacaspac201.WebApi.csproj", "{7D793354-2E3E-4ED6-AF11-F19FA06FF93C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.WebClient", "..\dmacaspac201.WebClient\dmacaspac201.WebClient.csproj", "{86C7E5F1-E017-40A8-84D9-66B3A7215E80}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.App", "..\dmacaspac201.App\dmacaspac201.App.csproj", "{17A54BFF-4056-4BD8-952B-D024DCB222EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.EntityFramework", "..\dmacaspac201.EntityFramework\dmacaspac201.EntityFramework.csproj", "{63EB1EC9-0386-42D1-A8C5-A6FD81F4E5B8}"
@@ -19,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.Contracts", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.MySql", "..\dmacaspac201.MySql\dmacaspac201.MySql.csproj", "{A4A60460-51B2-431B-8389-9CB48BED85B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmacaspac201.Models", "..\dmacaspac201.Models\dmacaspac201.Models.csproj", "{54DEE8FF-94E5-45B9-8181-06A2B24B2EDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dmacaspac201.Data", "..\dmacaspac201.Models\dmacaspac201.Data.csproj", "{54DEE8FF-94E5-45B9-8181-06A2B24B2EDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +27,6 @@ Global
 		{3AE047B9-EE6D-4818-9A49-48A4A510EC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AE047B9-EE6D-4818-9A49-48A4A510EC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AE047B9-EE6D-4818-9A49-48A4A510EC95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D793354-2E3E-4ED6-AF11-F19FA06FF93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D793354-2E3E-4ED6-AF11-F19FA06FF93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D793354-2E3E-4ED6-AF11-F19FA06FF93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D793354-2E3E-4ED6-AF11-F19FA06FF93C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86C7E5F1-E017-40A8-84D9-66B3A7215E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86C7E5F1-E017-40A8-84D9-66B3A7215E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86C7E5F1-E017-40A8-84D9-66B3A7215E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86C7E5F1-E017-40A8-84D9-66B3A7215E80}.Release|Any CPU.Build.0 = Release|Any CPU
 		{17A54BFF-4056-4BD8-952B-D024DCB222EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17A54BFF-4056-4BD8-952B-D024DCB222EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A54BFF-4056-4BD8-952B-D024DCB222EF}.Release|Any CPU.ActiveCfg = Release|Any CPU

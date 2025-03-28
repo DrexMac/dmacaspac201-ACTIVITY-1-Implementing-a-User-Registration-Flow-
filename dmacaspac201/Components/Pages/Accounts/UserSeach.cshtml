@@ -1,0 +1,43 @@
+﻿@page "/Accounts/UserSearch"
+@model dmacaspac201.Components.Pages.Accounts.UserSearchModel
+
+<h2>User Search</h2>
+
+<form method="get">
+    <div>
+        <label for="Keyword">Search Keyword:</label>
+        <input type="text" name="Keyword" value="@Model.Keyword" />
+    </div>
+    <div>
+        <label for="IsActive">Active:</label>
+        <input type="checkbox" name="IsActive" @checked(Model.IsActive) />
+    </div>
+    <button type="submit">Search</button>
+</form>
+
+@if (Model.Users != null && Model.Users.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.EmailAddress</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No users found.</p>
+}

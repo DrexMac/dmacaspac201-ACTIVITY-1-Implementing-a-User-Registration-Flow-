@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dmacaspac201.Models\dmacaspac201.Models.csproj" />
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dmacaspac201.Models\dmacaspac201.Data.csproj" />
   </ItemGroup>
 
 </Project>

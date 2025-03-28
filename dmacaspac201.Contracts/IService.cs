@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace dmacaspac201.Contracts
 {
-    public interface IService<T> where T : class
+    public interface IService
     {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T?> GetByIdAsync(Guid id);
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(Guid id);
+
     }
 }
+

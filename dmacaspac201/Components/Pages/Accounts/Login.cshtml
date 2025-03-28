@@ -1,0 +1,26 @@
+﻿@page "Accounts/Login"
+@model dmacaspac201.Components.Pages.Accounts.LoginModel
+
+<h2>Login</h2>
+
+<form method="post">
+    <div>
+        <label for="Email">Email</label>
+        <input type="email" name="Email" required />
+    </div>
+    <div>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" required />
+    </div>
+    <button type="submit">Login</button>
+</form>
+
+@if (!ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}

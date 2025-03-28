@@ -7,13 +7,24 @@ using System.Threading.Tasks;
 
 namespace dmacaspac201.Contracts
 {
-    public interface IRepository<TEntity> where TEntity : class
+    public interface IRepository<TEntity>
     {
-        IQueryable<TEntity> All();
-        IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
         Task AddAsync(TEntity model);
+
+        Task AddAsync(TEntity[] models);
+
+        IQueryable<TEntity> All();
+
+        IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
+
         void Update(TEntity model);
+
+        void Update(TEntity[] models);
+
         void Delete(TEntity model);
+
+        void Delete(TEntity[] models);
+
         Task SaveChangesAsync();
     }
 }

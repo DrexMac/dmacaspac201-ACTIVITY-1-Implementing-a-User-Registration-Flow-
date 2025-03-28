@@ -1,0 +1,34 @@
+﻿@page "Accounts/Register"
+@model dmacaspac201.Components.Pages.Accounts.RegisterModel
+
+<h2>Register</h2>
+
+<form method="post">
+    <div>
+        <label for="Email">Email</label>
+        <input type="email" name="Email" required />
+    </div>
+    <div>
+        <label for="FirstName">First Name</label>
+        <input type="text" name="FirstName" required />
+    </div>
+    <div>
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" required />
+    </div>
+    <div>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" required />
+    </div>
+    <button type="submit">Register</button>
+</form>
+
+@if (!ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
